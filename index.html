@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tailored Travel</title>
+    <!-- Link to Leaflet CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <!-- Script for Leaflet JavaScript file -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+</head>
+<!-- Application Name -->
+<body>
+    <h1>Tailored Travel</h1>
+    <h2>Select a business:</h2>
+    <form>
+        <select name="business">
+            <option value="coffee">Coffee</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="hotel">Hotel</option>
+            <option value="market">Market</option>
+        </select>
+        <button id="select">Select</button>
+    </form>
+        <br><br>
+<!-- Place map on page -->
+<div id="map"></div>
+<!-- Link to local JavaScript file -->
+    <script type="text/javascript" src="map.js"></script>
+</body>
+</html>
